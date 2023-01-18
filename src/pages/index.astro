@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import BlogCard from "@components/BlogCard.astro";
-import Subscribe from "@components/Subscribe.astro";
 import { Icon } from "astro-icon";
 
 interface Frontmatter {
@@ -22,14 +21,13 @@ blogs = blogs.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Dat
 <Layout {...metadata}>
   <section class="flex flex-col sm:flex-row justify-evenly items-center py-14">
     <div class="w-32 m-5 md:m-10 my-10">
-      <Icon name="simple-icons:astro" class="w-32 overflow-hidden inline-flex" />
+      <Icon name="vercel" class="w-32 overflow-hidden inline-flex" />
     </div>
     <header class="max-w-xl sm:order-first">
-      <h1 class="text-2xl sm:text-3xl font-bold mb-7 md:mb-5 text-center sm:text-left">Welcome to my Astro Blog Template</h1>
-      <p class="text-black dark:text-zinc-300 mb-5">I got bored and decided to create an Astro template from scratch. Hope you like it!</p>
+      <h1 class="text-2xl sm:text-3xl font-bold mb-7 md:mb-5 text-center sm:text-left">Welcome to Jimmy's Blog PastMac</h1>
+      <p class="text-black dark:text-zinc-300 mb-5">I am Jimmy a Persian Cat, got bored one day sitting o coutch. I desided to run my own blog</p>
       <p class="text-black dark:text-zinc-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, debitis minima! Illo esse quod enim id deleniti, veritatis magnam dolorum non accusantium quam et nemo dolorem
-        aspernatur eligendi quidem est.
+       I have little knowldge in everything, so I told my dad to create a blog where i can write my knowledge. We together created this blog, which having all the knowledge I have.
       </p>
     </header>
   </section>
